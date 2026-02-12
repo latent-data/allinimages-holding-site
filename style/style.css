@@ -1,0 +1,49 @@
+body {
+  font-family: 'Lexend', sans-serif !important;
+}
+body > .grecaptcha-badge,
+body > div > .grecaptcha-badge,
+section:first-child .g-recaptcha {
+    display: none !important;
+}
+
+/* Ensure only the reCAPTCHA inside the form is visible */
+#contact-form .g-recaptcha {
+    display: block !important;
+}
+
+/* Center the reCAPTCHA */
+#contact-form .flex.justify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    #contact-form .g-recaptcha {
+        transform: scale(0.9);
+        transform-origin: center;
+    }
+}
+
+.pt-34 {
+    padding-top: 350px; /* Adjust this value as needed */
+}
+
+.font-default-color{
+    color: #dae022 !important;
+}
+.font-secondary-color{
+    color: #0B4650 !important;
+}
+.yellow-main-bg {
+    background-color: #D9E021 !important;
+}
+.yellow-main-font {
+    color: #D9E021 !important;
+}
+.green-main-bg-color{
+    background-color: #0B4650 !important;
+}
