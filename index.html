@@ -337,83 +337,14 @@
         <p class="text-center text-lg mb-2">collection owners, and organizations to join us in elevating</p>
         <p class="text-center text-lg mb-2">representation in your collections and online content. Let's collaborate</p>
         <p class="text-center text-lg mb-2">and celebrate the unique stories that deserve to be seen and shared!</p>
-        <p class="text-center text-lg mb-8">Email us at <a href="mailto:hello@allinimages.io" class="underline font-semibold">hello@allinimages.io</a></p>
-        
-        <h3 class="text-2xl font-semibold text-center mb-8 font-secondary-color">Get in Touch!</h3>
-        
-        <!-- Success/Error Messages -->
-        <div id="form-message" class="hidden mb-4 px-4 py-3 rounded text-center" role="alert"></div>
-        
-        <form id="contact-form" class="space-y-4 max-w-md mx-auto" onsubmit="handleSubmit(event)">
-            <label for="name" class="sr-only">Full Name</label>
-            <input type="text" 
-                   name="name"
-                   id="name"
-                   placeholder="Name" 
-                   required
-                   aria-required="true"
-                   class="w-full px-6 py-4 rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-teal-600" />
-            
-            <label for="email" class="sr-only">Email Address</label>
-            <input type="email" 
-                   name="email"
-                   id="email"
-                   placeholder="Email" 
-                   required
-                   aria-required="true"
-                   class="w-full px-6 py-4 rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-teal-600" />
-            
-            <label for="organization" class="sr-only">Organization Name</label>
-            <input type="text" 
-                   name="organization"
-                   id="organization"
-                   placeholder="Organization" 
-                   class="w-full px-6 py-4 rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-teal-600" />
-            
-            <label for="message" class="sr-only">Your Message</label>
-            <textarea name="message"
-                      id="message"
-                      placeholder="Message" 
-                      rows="4"
-                      required
-                      aria-required="true"
-                      class="w-full px-6 py-4 rounded-3xl text-lg focus:outline-none focus:ring-2 focus:ring-teal-600 resize-none"></textarea>
-            
-            <!-- reCAPTCHA v2 checkbox -->
-            <div class="flex justify-center my-4">
-                <div class="g-recaptcha" data-sitekey="6Lc4N4IrAAAAADPSZ9GnlSJI3luKXOovjntSMVK7"></div>
-            </div>
-            
-            <button type="submit" 
-                    id="submit-btn"
-                    class="w-full py-4 font-bold text-lg rounded-full green-main-bg-color text-white hover:bg-teal-700 transition-colors uppercase">
-                SUBMIT
-            </button>
+        <p class="text-center text-lg mb-8">Email us at <a href="mailto:hello@allinimages.io" class="underline font-semibold">hello@allinimages.io</a></p>        
         </form>
     </div>
   </section>
 
   <!-- Mobile Menu Toggle Script -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript" src="js/mailfunctiom.js"></script>
-  <script type="text/javascript" src="js/mobile.js"></script>
-    <script>
-    // Register Service Worker for Image Caching
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then((registration) => {
-          })
-          .catch((registrationError) => {
-          });
-      });
-    }
-  </script>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("demo-form").submit();
-    }
-  </script>
+
 
 </body>
 </html>
